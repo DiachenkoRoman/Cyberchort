@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "Cyberpunk";
+    src: url("../fonts/Eng.woff") format("woff"),
+      url("../fonts/Eng.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: "CriticalMass";
+    src: url("../fonts/Critical-Mass-LDR.woff") format("woff"),
+      url("../fonts/Critical-Mass-LDR.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+  }
+*{
+    font-family: "CriticalMass", "Arial", sans-serif;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/back.jpg);
+    background-size: cover;
+    &__banner{
+        font-family: "Cyberpunk";
+        font-size: 75px;
+        color: #05d9e8;
+        text-shadow: 5px 1px 1px #ff2a6d;
+        margin: 0;
+        text-align: center;
+    }
+    &__banner::first-letter {
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+    &__menu {
+        font-size: 25px;
+        margin-top: 100px;
+        .btn {
+            display: flex;
+            margin: 0 auto;
+            padding: 15px;
+            margin-bottom: 15px;
+            outline: none;
+            border: 0;
+            position: relative;
+            background: transparent;
+            clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+            background-image: linear-gradient(to left,transparent,transparent 50%,#ff2a6d 50%,#ff2a6d);
+            background-position: 100% 0;
+            background-size: 200% 100%;
+            transition: all .25s ease-in;
+            &:hover {
+                background-position: 0 0;
+                color:black;
+            }
+            & a {
+              text-decoration: none;
+              color: black;
+            }
+        }
+    }
+}
+.promo{
+  background: url(../img/promo.jpg);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  &__banner {
+    font-family: "Cyberpunk";
+    font-size: 75px;
+    margin: 0;
+    margin-bottom: 35px;
+    text-align: center;
+    color: #05d9e8;
+    text-shadow: 5px 1px 1px #ff2a6d;
+    &::first-letter {
+      text-transform: uppercase;
+      font-size: 1.5em;
+    }
+  }
+  &__cat {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: top;
+    justify-content: space-around;
+    .items {
+      width: 30vw;
+      border: 2px solid #ff2a6d;
+      background-image: linear-gradient(to left,transparent,transparent 50%,#005768 50%,#005768);
+      background-position: 100% 0;
+      background-size: 200% 100%;
+      transition: all .25s ease-in;
+     img {
+       width: 30vw;
+       height: 25vh;
+     }
+     & h3 {
+       font-family: "Cyberpunk";
+       text-align: center;
+       margin: 0;
+       margin-bottom: 20px;
+       font-size: 55px;
+       color: #05d9e8;
+       text-shadow: 5px 1px 1px #ff2a6d;
+     }
+     & h3::first-letter {
+       text-transform: uppercase;
+       font-size: 1.5em;
+     }
+    &:hover {
+    background-position: 0 0;
+    color:white;
+    }
+    }
+  }
+}
+.vehicle {
+  background: url(../img/vehicle.jpg);
+  width: 100%;
+  height: 100vh;
+  &__banner{
+    font-family: "Cyberpunk";
+    font-size: 75px;
+    margin: 0;
+    text-align: center;
+    color: #05d9e8;
+    text-shadow: 5px 1px 1px #ff2a6d;
+    &::first-letter {
+      text-transform: uppercase;
+      font-size: 1.5em;
+    }
+  }
+  &__cat {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 35px;
+    &_items{
+      margin-bottom: 15px;
+      padding-right: 15px;
+      border: 2px solid #ff2a6d;
+      background-image: linear-gradient(to left,transparent,transparent 50%,#005768 50%,#005768);
+      background-position: 100% 0;
+      background-size: 200% 100%;
+      transition: all .4s ease-in;
+      &:hover {
+        background-position: 0 0;
+        color:white;
+      }
+      img {
+        width: 40vw;
+        height: 30vh;
+        float: left;
+        margin-right: 15px;
+      }
+      & h3{
+        font-family: "Cyberpunk";
+        margin: 0;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 50px;
+        color: #05d9e8;
+        text-shadow: 5px 1px 1px #ff2a6d;
+      }
+      & h3::first-letter {
+        text-transform: uppercase;
+        font-size: 1.5em;
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Cyberchort">
+    <meta name="keywords" content="Cyberchort">
+    <title>Cybershopopalo</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+               $("#main").on("click","a", function (event) {
+                   event.preventDefault();
+                   var id  = $(this).attr('href'),
+                       top = $(id).offset().top;
+                   $('body,html').animate({scrollTop: top}, 1000);
+               });
+           });
+        </script>
+</head>
+<body>
+    <main id="main" class="main">
+        <h3 class="main__banner">critical mass</h3>
+        <div class="main__menu">
+            <button class="btn"><a href="#promo">start</a></button>
+            <button class="btn"><a href="#vehicle">vehicle</a></button>
+            <button class="btn">news</button>
+            <button class="btn">about</button>
+            <button class="btn">contact me</button>
+        </div>
+    </main>
+    <div id="promo" class="promo">
+        <h3 class="promo__banner">starter kits</h3>
+        <div class="promo__cat">
+            <div class="items">
+                <img src="img/citizen.jpg" alt="citizen kit">
+                <h3>citizen kit</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae quam suscipit consectetur quasi ex numquam excepturi voluptate repellendus praesentium inventore vero totam, qui tempore. Magni vitae nostrum maiores autem voluptatum.
+
+            </div>
+            <div class="items">
+                <img src="img/vilain.jpg" alt="vilain">
+                <h3>vilain kit</h3>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt ea voluptatem libero ipsum labore, nisi enim suscipit doloribus odit voluptates illo aspernatur similique id a totam consectetur voluptatum nesciunt veritatis!
+
+            </div>
+            <div class="items">
+                <img src="img/god.png" alt="god">
+                <h3>cybergod kit</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolore a eum quae. Maiores ab quae eum quibusdam quod deserunt suscipit doloribus atque nemo, natus aliquid dicta fugiat, laudantium magni?
+            </div>
+        </div>
+    </div>
+    <div id="vehicle" class="vehicle">
+        <h1 class="vehicle__banner">let your obsession become real</h1>
+        <div class="vehicle__cat">
+            <div class="vehicle__cat_items">
+                <img src="img/kusanagi_blade.jpg" alt="Kusanagi">
+                <h3>kusanagi blade</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, eius sequi iste, voluptate, temporibus perspiciatis tempora iure provident earum deleniti architecto nemo a sit voluptatem rerum ducimus nisi id error?
+            </div>
+            <div class="vehicle__cat_items">
+                <img src="img/quadra.gif" alt="Quadra">
+                <h3>the quadra</h3>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, culpa praesentium necessitatibus, error laborum facilis nulla, omnis deleniti vero numquam maiores exercitationem. Voluptate deserunt quisquam, sint aspernatur ad ducimus neque.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
